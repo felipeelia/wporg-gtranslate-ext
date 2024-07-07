@@ -1,0 +1,11 @@
+{
+    "*.css": [
+      "10up-toolkit lint-style"
+    ],
+    "*.js": [
+      "10up-toolkit lint-js"
+    ],
+    "*.jsx": [
+      "10up-toolkit lint-js"
+    ]
+}

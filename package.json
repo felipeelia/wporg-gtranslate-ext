@@ -1,0 +1,24 @@
+{
+  "name": "wporg-gtranslate-ext",
+  "version": "1.0.0",
+  "description": "WP.org - Google Translate Browser Extension",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "10up-toolkit build",
+    "dev": "10up-toolkit build --watch",
+    "format-js": "10up-toolkit format-js",
+    "lint-js": "10up-toolkit lint-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:felipeelia/wporg-gtranslate-ext.git"
+  },
+  "author": "Felipe Elia",
+  "license": "ISC",
+  "devDependencies": {
+    "10up-toolkit": "^6.2.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7"
+  }
+}

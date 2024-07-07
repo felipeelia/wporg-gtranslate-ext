@@ -1,0 +1,33 @@
+{
+	"manifest_version": 3,
+	"name": "WP.org - Google Translate",
+	"description": "Google Translate inside WP.org",
+	"version": "1.0",
+	"icons": {},
+	"background": {
+		"service_worker": "scripts/background/index.js"
+	},
+	"content_scripts": [
+		{
+			"js": ["scripts/add-button.js"],
+			"matches": [
+				"https://translate.wordpress.org/projects/*"
+			]
+		}
+	],
+	"web_accessible_resources": [{
+		"matches": [
+			"*://*/*"
+		],
+		"resources": []
+	}],
+	"permissions": [
+		"contextMenus",
+		"storage",
+		"tabs"
+	],
+	"host_permissions": [
+		"*://translate.wordpress.org/projects/*"
+	],
+	"options_page": "options.html"
+}
