@@ -10,13 +10,13 @@ It requires a Google Cloud Translation API key. Check [this section](#google-clo
 
 # How to Install
 
-1. Go to chrome://extensions
+1. Go to [chrome://extensions](chrome://extensions)
 1. Enable Developer Mode by clicking the toggle switch next to Developer mode
 1. Click the Load unpacked button and select the extension `src` directory
 
 # How to update
 
-1. Go to chrome://extensions
+1. Go to [chrome://extensions](chrome://extensions)
 1. Find the extension
 1. Click the refresh icon next to the on/off toggle
 
@@ -33,3 +33,5 @@ It requires a Google Cloud Translation API key. Check [this section](#google-clo
 1. Copy the API Key created
 1. On your browser's extensions, right-click on the "W" (this extension icon) and then select "Options"
 1. Paste the API Key in the screen that opens up and click "Save".
+
+Although completely unrelated to this project, [this link](https://crmsupport.freshworks.com/support/solutions/articles/50000004404-google-translate-key) contains the steps to generate an API key.
