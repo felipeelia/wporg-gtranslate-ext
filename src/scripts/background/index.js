@@ -1,6 +1,6 @@
 /* global chrome */
 
-const fetchResponse = (gTranslateKey, string, sendResponse) => {
+const fetchResponse = (gTranslateKey, { string, language }, sendResponse) => {
 	// Timeout after 3 seconds.
 	const timeoutController = new AbortController();
 	setTimeout(() => {
@@ -10,7 +10,7 @@ const fetchResponse = (gTranslateKey, string, sendResponse) => {
 	const urlParams = new URLSearchParams({
 		q: string,
 		key: gTranslateKey,
-		target: 'pt-br',
+		target: language,
 	}).toString();
 
 	fetch(`https://translation.googleapis.com/language/translate/v2?${urlParams}`, {
@@ -42,7 +42,7 @@ const fetchResponse = (gTranslateKey, string, sendResponse) => {
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 	chrome.storage.sync.get({ gTranslateKey: '' }, (items) => {
 		const gTranslateKey = items.gTranslateKey || '';
-		fetchResponse(gTranslateKey, request.string, sendResponse);
+		fetchResponse(gTranslateKey, request, sendResponse);
 	});
 	return true;
 });
