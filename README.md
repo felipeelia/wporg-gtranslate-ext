@@ -4,7 +4,9 @@ WP.org - Google Translate Browser Extension
 This browser extension adds a "Translate" button on WordPress.org's Translation system.
 It requires a Google Cloud Translation API key. Check [this section](#google-cloud-translation-api-key) on how to get yours.
 
-![](assets/wp-org-ext-translate-button.png | width=200)
+<p align="center">
+  <img width="460" src="https://raw.githubusercontent.com/felipeelia/wporg-gtranslate-ext/trunk/assets/wp-org-ext-translate-button.png">
+</p>
 
 # How to Install
 
