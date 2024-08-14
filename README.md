@@ -26,7 +26,7 @@ It requires a Google Cloud Translation API key. Check [this section](#google-clo
 1. Select or add the project you want to use
 1. Click on "APIs & Services"
 1. Click on "Enable APIs and Services"
-1. Search for "Cloud Translation" and click on it. Then click on "Enable"
+1. Search for "Cloud Translation API" and click on it. Then click on "Enable"
 1. If you don't have it yet, set up Billing. The free quota is quite large, check [this link](https://cloud.google.com/translate/?hl=en#pricing).
 1. Back to APIs & Services, click on "Credentials" on the left site
 1. Click on "Create Credentials" > API Key
